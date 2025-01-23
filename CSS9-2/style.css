@@ -1,0 +1,1094 @@
+/* banking და main div-ებზე height მარიმ მითხრა სხვა გზა არააო და ეგრე დავწერე*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logoLinks {
+    background-color: #53389E;
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.headerLogoLinks {
+    display: flex;
+    gap: 32px;
+}
+
+.headerLinks {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.linkArrow {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.headerButtons {
+    display: flex;
+    gap: 12px;
+}
+
+.headerButtons button {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    font-weight: 600;
+    color: #414651;
+}
+
+.headerButtons button:hover {
+    background-color: #7F56D9;
+    color: #FFFFFF;
+}
+
+.headerLinks a {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #53389E;
+    gap: 64px;
+    height: 994px;
+    background-image: url(./images/Cards.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.banking {
+    max-width: 1216px;
+    width: 100%;
+    margin-top: 96px;
+    gap: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 994px;
+}
+
+.simpleBanking {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.simpleBankingText {
+    max-width: 768px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.menu {
+    display: none;
+}
+
+.bankingButton {
+    display: flex;
+    gap: 12px;
+}
+
+
+
+.bankingButton button {
+    font-size: 18px;
+    font-weight: 600;
+    color: #414651;
+    border-radius: 10px;
+    padding: 16px 22px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.button img {
+    width: 24px;
+    height: 24px;
+}
+
+.bankingButton button:hover {
+    background-color: #7F56D9;
+    color: #FFFFFF;
+}
+
+.cards {
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.card {
+    max-width: 1280px;
+    width: 100%;
+}
+
+.banking p {
+    color: #E9D7FE;
+}
+
+.simpleBankingText h1 {
+    font-size: 72px;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-align: center;
+}
+
+.mainCont {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 96px 20px;
+}
+
+.logo {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.logoImages {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.simpleCard {
+    background-color: #F2EDFF;
+    display: flex;
+    justify-content: center;
+    padding: 96px 20px;
+    width: 100%;
+    gap: 64px;
+}
+
+.simple {
+    max-width: 360px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.simple img {
+    width: 56px;
+    height: 56px;
+}
+
+.simple h1 {
+    font-size: 36px;
+    color: #181D27;
+}
+
+.simpleCard h3 {
+    color: #535862;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.simpleCard p {
+    font-size: 16px;
+    color: #535862;
+    line-height: 24px;
+}
+
+.simpleSec {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.cardText {
+    max-width: 364px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cardText h2 {
+    font-size: 20px;
+    color: #181D27;
+    line-height: 30px;
+}
+
+.wrapper {
+    display: flex;
+    gap: 64px;
+}
+
+
+.features {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    gap: 64px;
+    flex-direction: column;
+}
+
+.featuresAll {
+    max-width: 768px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 32px;
+}
+
+.modern {
+    width: 100px;
+    width: 100%;
+    display: flex;
+    gap: 64px;
+    background-image: url(./images/Modern\ screen\ mockup.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: 673px;
+}
+
+
+
+.share {
+    padding: 16px 24px;
+    border-left: 4px solid#9E77ED;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 560px;
+    width: 100%;
+}
+
+.shares {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.shareSec {
+    padding: 16px 24px;
+    border-left: 4px solid#F5F5F5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 560px;
+    width: 100%;
+}
+
+.arrowDiv {
+    display: flex;
+    gap: 6px;
+}
+
+.shares h3 {
+    font-size: 20px;
+    color: #181D27;
+    font-weight: 600;
+}
+
+.shares h4 {
+    font-size: 16px;
+    color: #535862;
+    font-weight: 400;
+}
+
+.features p {
+    font-size: 16px;
+    color: #6941C6;
+    font-weight: 600;
+}
+
+.pricing {
+    max-width: 1280px;
+    width: 100%;
+    padding: 96px 20px;
+    background-color: #F2EDFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.plans {
+    display: flex;
+    gap: 64px;
+    width: 100%;
+}
+
+.upgrade {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 440px;
+    width: 100%;
+}
+
+.upgradeText {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pricing p {
+    font-size: 16px;
+    color: #6941C6;
+    font-weight: 600;
+}
+
+.pricing h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #181D27;
+}
+
+.pricing h4 {
+    font-size: 18px;
+    color: #535862;
+    font-weight: 400;
+}
+
+.pricingCards {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 32px;
+    justify-content: space-between;
+}
+
+.cardsPlan {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    gap: 32px;
+    width: 100%;
+}
+
+.cardsPrice {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.cardsTicks {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px;
+}
+
+.tick {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.card h3 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #6941C6;
+}
+
+.card h5 {
+    font-weight: 600;
+    font-size: 48px;
+    color: #181D27;
+    line-height: 60px;
+}
+
+.card h6 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #535862;
+    line-height: 24px;
+}
+
+.pricingCardsSec {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    width: 100%;
+    border-radius: 16px;
+    justify-content: space-between;
+}
+
+.cardButton {
+    padding: 32px;
+    background-color: #FAFAFA;
+    border-top: 1px solid #E9EAEB;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.cardButton button {
+    padding: 12px 18px;
+    background-color: #7F56D9;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.cardButtonSec {
+    padding: 32px;
+    background-color: #FAFAFA;
+    border-top: 1px solid #E9EAEB;
+    margin-top: 32px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.cardButtonSec button {
+    padding: 12px 18px;
+    background-color: #7F56D9;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.avatar {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.avatrStar {
+    display: flex;
+    max-width: 1280px;
+    background-color: #53389E;
+    padding: 32px;
+    border-radius: 24px;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    background-image: url(./images/Image.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.image {
+    display: none;
+}
+
+.starText {
+    max-width: 608px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.avatarAuth {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+footer {
+    width: 100%;
+    background-color: #FAFAFA;
+    margin-top: 120px;
+    padding-top: 64px;
+    padding-bottom: 48px;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+}
+
+.firstFooter {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerText {
+    max-width: 320px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footerText img {
+    width: 50%;
+}
+
+.footLinks {
+    max-width: 712px;
+    width: 100%;
+    display: flex;
+    gap: 32px;
+}
+
+.link {
+    max-width: 144px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footButt {
+    max-width: 360px;
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.firstFooter p {
+    color: #535862;
+    line-height: 24px;
+}
+
+.firstFooter a {
+    color: #6941C6;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.firstFooter h2 {
+    font-size: 14px;
+    color: #181D27;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    max-width: 360px;
+    justify-content: space-between;
+}
+
+.butt .type {
+    max-width: 229px;
+    width: 100%;
+    padding: 14px;
+    cursor: pointer;
+    box-shadow: 4px 4px 20.9px 0px #7F56D940;
+    border: 1px solid #7F56D9;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    text-align: left;
+    color: #717680;
+
+}
+
+.buttonSub {
+    padding: 10px 18px;
+    background-color: #7F56D9;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.feat {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pric {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #F2EDFF;
+}
+
+.avat {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.linksSec {
+    max-width: 320px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondFooter {
+    border-top: 1px solid #E9EAEB;
+    padding-top: 32px;
+    padding-left: 20px;
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondFooter p {
+    color: #717680;
+}
+
+.secondFooter a {
+    color: #717680;
+}
+
+.cLinks {
+    display: flex;
+    gap: 16px;
+}
+
+.avatrStar  h1 {
+    color: #FFFFFF;
+    font-size: 36px;
+
+}
+
+.avatrStar h2 {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.avatrStar p {
+    color: #E9D7FE;
+}
+
+.newDiv {
+    max-width: 248px;
+    display: none;
+    background-color: #53389E;
+    width: 100%;
+    flex-direction: column;
+    border-radius: 16px;
+}
+
+.new {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.newButton {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.newDiv img {
+    border-radius: 0px 0px 12px 12px;
+}
+
+.newText {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.newDiv h1 {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.newDiv p {
+    color: #E9D7FE;
+    line-height: 28px;
+}
+
+.new button {
+    border: none;
+    padding: 12px 18px;
+    background-color: #FFFFFF;
+    color: #414651;
+    border-radius: 8px;
+}
+
+.featuresAll h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #535862;
+}
+
+.backimg img {
+    display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .headerButtons {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .headerLinks {
+        display: none;
+    }
+
+    .logoLinks {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .logoImages {
+        flex-wrap: wrap;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .simple {
+        max-width: 320px;
+        width: 100%;
+    }
+
+    .cardText {
+        max-width: 320px;
+        width: 100%;
+    }
+
+    .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .simpleCard {
+        padding: 96px 32px;
+    }
+
+    .share {
+        max-width: 296px;
+        width: 100%;
+    }
+
+    .shareSec {
+        max-width: 296px;
+        width: 100%;
+    }
+
+    .features {
+        padding-left: 32px;
+    }
+
+    .card {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .modern {
+        background-image: url(./images/Modern\ screen\ mockup.svg);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-position: bottom right;
+        background-position-x: 380px;
+        background-position-y: 73px;
+
+    }
+
+    .plans {
+        padding: 0;
+        max-width: 704px;
+        width: 100%;
+    }
+
+    .pricing {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        padding-left: 32px;
+        align-items: baseline;
+    }
+
+    .pricingCards {
+        max-width: 336px;
+        width: 100%;
+    }
+
+    .pricingCardsSec {
+        max-width: 336px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .pricingCards {
+        margin: 0;
+    }
+
+    .avatar {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .avatrStar {
+        background-image: none;
+        padding: 0;
+    }
+
+    .starText {
+        padding-top: 32px;
+        padding-left: 32px;
+
+    }
+
+    .avatrAuth {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .rect {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .image {
+        display: flex;
+    }
+
+    .firstFooter {
+        flex-direction: column;
+        gap: 42px;
+    }
+
+    .footLinks {
+        flex-direction: column;
+    }
+
+    .footButt {
+        order: -1;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .headerButtons {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .headerLinks {
+        display: none;
+    }
+
+    .logoLinks {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .simpleCard {
+        flex-wrap: wrap;
+    }
+
+    .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex-wrap: wrap;
+    }
+
+    .pricing {
+        flex-wrap: wrap;
+    }
+
+    .newDiv {
+        display: flex;
+    }
+
+    .new button:hover {
+        background-color: #7F56D9;
+        color: #FFFFFF;
+    }
+
+    .main h1 {
+        font-size: 36px;
+        text-align: left;
+    }
+
+    .bankingButton {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bankingButton button {
+        max-width: 288px;
+        width: 100%;
+    }
+
+    .simpleBankingText p {
+        align-self: flex-start;
+    }
+
+    .banking {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footLinks {
+        flex-wrap: wrap;
+    }
+
+    .firstFooter {
+        flex-wrap: wrap;
+    }
+
+    .cLinks {
+        flex-wrap: wrap;
+    }
+
+    .modern {
+        background-image: none;
+    }
+
+
+    .inboxes img {
+        display: flex;
+        margin-top: 48px;
+    }
+
+    .logo p {
+        text-align: center;
+    }
+
+    .mainCont {
+        gap: 0;
+    }
+
+    .featuresAll {
+        margin-top: 64px;
+    }
+
+    .backimg img {
+        display: flex;
+        max-width: 288px;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .card {
+        gap: 0;
+        margin-top: 48px;
+    }
+
+    .avatrStar {
+        background-image: none;
+    }
+
+    .image {
+        display: flex;
+    }
+
+    .avatrStar {
+        padding: 0;
+    }
+
+    .starText {
+        padding: 40px 20px 0px ;
+    }
+
+    .avatrAuth {
+        padding: 0px 20px;
+    }
+
+    .rect {
+        padding: 0px 20px;
+    }
+
+    .footButt {
+        order: -1;
+    }
+
+    .firstFooter {
+        gap: 48px;
+    }
+
+    .footLinks {
+        gap: 48px;
+    }
+
+    .linksSec {
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .secondFooter {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+}
